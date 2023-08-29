@@ -1,3 +1,7 @@
+main {
+    padding-bottom: 200px; 
+}
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: white;
@@ -5,7 +9,6 @@ body {
     margin: 0;
 }
 
-/* Style for the header */
 header {
     display: flex;
     align-items: center;
@@ -20,7 +23,6 @@ header {
     padding: 10px 20px;
 }
 
-/* Style for the navigation links */
 .nav-links {
     list-style-type: none;
     display: flex;
@@ -39,7 +41,6 @@ header {
     font-weight: bold;
 }
 
-
 .logo {
     display: flex;
     align-items: center;
@@ -57,7 +58,6 @@ header {
     max-width: 50px; 
     max-height: 50px;
 }
-
 
 .search-bar {
     display: flex;
@@ -177,6 +177,13 @@ header {
     cursor: pointer;
 }
 
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    position: relative; 
+}
+
 .contact-content {
     display: flex;
     justify-content: center; 
@@ -247,8 +254,8 @@ footer {
 
 .footer-logo img {
     display: flex;
-    max-width: 40px; /* Adjust logo image size */
-    margin: 0 10px; /* Adjust spacing between logo image and text */
+    max-width: 40px;
+    margin: 0 10px; 
 }
 
 .footer-logo a {
@@ -258,12 +265,12 @@ footer {
     color: #fff;
     font-size: 2rem;
     font-weight: bold;
-    flex-direction: column; /* Stack text and image vertically */
-    text-align: center; /* Center-align text */
+    flex-direction: column; 
+    text-align: center; 
 }
 
 .footer-logo a img {
-    margin: 0 auto; /* Center-align the image */
+    margin: 0 auto; 
 }
 
 .social-media {
