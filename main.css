@@ -152,7 +152,7 @@ header {
 }
   
 .product {
-    border: 1px solid #ddd; 
+    border: 1px; 
     padding: 15px;
     text-align: center;
 }
@@ -235,24 +235,35 @@ footer {
     bottom: 0;
 }
 
-.logo-bottom {
-    .logo {
-        display: flex;
-        align-items: center;
-        font-size: 1.2rem;
-        font-weight: bold;
-    }
-    
-    .logo a {
-        text-decoration: none;
-        color: #000;
-        margin-right: 10px; 
-    }
-    
-    .logo img {
-        max-width: 50px; 
-        max-height: 50px;
-    }
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    display: flex;
+    max-width: 40px; /* Adjust logo image size */
+    margin: 0 10px; /* Adjust spacing between logo image and text */
+}
+
+.footer-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    flex-direction: column; /* Stack text and image vertically */
+    text-align: center; /* Center-align text */
+}
+
+.footer-logo a img {
+    margin: 0 auto; /* Center-align the image */
 }
 
 .social-media {
