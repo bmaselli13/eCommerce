@@ -9,29 +9,36 @@
 <body>
     <header>
         <nav>
-            <a class="logo">
-                <span class="logo-text">CARA</span>
-                <img src="./images/icons8-pottery-96.png" alt="Pottery Logo">
-                <span class="logo-text">CARA</span>
-            </a>
             <ul class="nav-links">
-                <li><a href="#home-section">HOME</a></li>
-                <li><a href="#about-section">ABOUT</a></li>
-                <li><a href="#products-section">PRODUCTS</a></li>
-                <li><a href="#contact-section">CONTACT</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
-            <form action="/search" method="get" class="search-form">
-                <input type="search" name="query" placeholder="Search..." />
-                <button type="submit">Search</button>
-            </form>
         </nav>
+        <div class="logo">
+            <a href="#">CARA <img src="./images/icons8-pottery-96.png"> CARA</a>
+        </div>
+        <div class="search-bar">
+            <div class="search-form">
+                <input type="search" name="query" placeholder="Search...">
+                <button type="submit">                        
+                </button>
+            </div>
+        </div>
+        <div class="cart">
+            <a href="#" class="cart-link">
+                <span class="cart-text">Cart</span>
+                <span class="item-count">0</span>
+            </a>
+        </div>
     </header>
     <main>                   
         <section class="about" id="about-section">
-            <div class="about-container">
-                <div class="top-image">
-                    <img src="./images/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg" alt="Top Image">
-                </div>
+            <section class="image-about-container">
+                <img src="./images/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg" alt="Logo">
+            </section>
+            <div class="about-container">                
                 <h2>About Us</h2>
                 <div class="header-line"></div>                
                 <div class="about-content">
@@ -169,23 +176,27 @@ Nullam ac tortor    vitae purus
         </section>
     </main>
     <footer>
-        <div class="social-media">
-          <a href="https://www.facebook.com/">
-            <img src="images/icons8-facebook-96 (1).png" alt="Facebook">
-          </a>
-          <a href="https://www.youtube.com/">
-            <img src="images/icons8-youtube-96.png" alt="YouTube">
-          </a>
-          <a href="https://www.instagram.com/">
-            <img src="images/icons8-instagram-96.png" alt="Instagram">
-          </a>
-          <a href="https://twitter.com/">
-            <img src="images/icons8-twitter-96.png" alt="Twitter">
-          </a>
+        <div class="social-media">           
+            <a href="https://www.facebook.com/">
+                <img src="./images/icons8-facebook-96 (1).png" alt="Facebook">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="./images/icons8-youtube-96.png" alt="YouTube">
+            </a>
+            <div class="logo-bottom">
+                <a>CARA <img src="./images/icons8-pottery-96 (1).png"> CARA</a>
+            </div>
+            <a href="#">
+                <img src="./images/icons8-twitter-96.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="./images/icons8-instagram-96.png" alt="Instagram">
+            </a>
+            <p>
+                © Copyright 2015-2023 
+            </p>
         </div>
-        <p>
-        © Copyright 2015-2023 
-        </p>
-    </footer>
+        <!-- Rest of your footer content -->
+    </footer>  
 </body>
 </html>
