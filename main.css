@@ -105,14 +105,14 @@ header {
 
 .image-about-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center; /* Align items horizontally to the center */
+    align-items: center; /* Align items vertically to the center */
+    overflow: hidden; /* Hide any overflow content */
 }
 
 .image-about-container img {
-    flex: 0 0 auto; 
-    max-width: 100%; 
-    height: auto; 
+    flex: 1; /* Grow and shrink equally */
+    width: 50%; /* Set image width */
 }
 
 .about-container {
@@ -122,12 +122,30 @@ header {
     padding-top: 100px; 
 }
 
-.about-content {
+.about {
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    max-width: 800px;
-    margin: 0 auto; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+    max-width: calc(50% - 20px); /* Max width for text content */
+}
+
+.about-images {
+    display: flex;
+    flex-basis: calc(50% - 20px); /* Max width for image container */
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.about-images img {
+    width: calc(50% - 10px); /* Half of image container width with margin */
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    margin: 5px; /* Margin between images */
 }
 
 .products h2 {
@@ -245,6 +263,7 @@ footer {
 .footer-logo-container {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center the entire content horizontally */
 }
 
 .footer-logo {
@@ -253,24 +272,18 @@ footer {
 }
 
 .footer-logo img {
-    display: flex;
     max-width: 40px;
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
 .footer-logo a {
-    display: flex;
-    align-items: center;
     text-decoration: none;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    flex-direction: column; 
-    text-align: center; 
+    color: #000;
+    margin-right: 10px;
 }
 
 .footer-logo a img {
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .social-media {
