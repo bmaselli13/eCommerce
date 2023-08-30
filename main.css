@@ -44,36 +44,46 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
-    font-weight: bold;
+    margin: 10px; 
+}
+
+.logo img {
+    max-width: 40px; 
+    margin-right: 10px; 
+    margin-left: 10px; 
 }
 
 .logo a {
     text-decoration: none;
     color: #000;
-    margin-right: 10px; 
-}
-
-.logo img {
-    max-width: 50px; 
-    max-height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    margin-left: 20px; 
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    padding: 1px;
 }
 
 .search-form input[type="search"] {
-    padding: 6px 30px 6px 10px; 
     border: none;
-    border-radius: 20px;
-    margin-right: 10px;
-    background-image: url(/images/1200px-Google_Magnifying_Glass.svg.png);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 20px; 
+    padding: 5px;
+}
+
+.search-form button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 /* Style for the cart */
@@ -260,10 +270,23 @@ footer {
     bottom: 0;
 }
 
-.footer-logo-container {
+.logo-bottom {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the entire content horizontally */
+    margin: 10px; 
+}
+
+.logo-bottom img {
+    max-width: 40px;
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+
+.logo-bottom a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
 }
 
 .footer-logo {
